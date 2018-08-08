@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchContainerComponent } from './components/search-container/search-container.component';
 import { TrackListComponent } from './components/track-list/track-list.component';
 import { TrackComponent } from './components/track/track.component';
+import { FormsModule } from '@angular/forms'
 
 
 
@@ -19,7 +20,8 @@ import { TrackComponent } from './components/track/track.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

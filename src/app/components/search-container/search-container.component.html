@@ -1,3 +1,4 @@
-<p>
-  search-container works!
-</p>
+<form (submit)="onSubmit($event)">
+  <input name="search" [(ngModel)]="searchResult" />
+  <button>Search</button>
+</form>

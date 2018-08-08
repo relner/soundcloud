@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-search-container',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchContainerComponent implements OnInit {
 
-  constructor() { }
+  searchResult;
 
-  ngOnInit() {
+  @Output() search = new EventEmitter();
+
+  constructor() { }
+  
+  ngOnInit() {}
+
+  onSubmit(event){
+    event.preventDefault();
+    this.search.emit(this.searchResult);
   }
+
+
 
 }

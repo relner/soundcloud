@@ -1,4 +1,5 @@
-<p>
-  track-list works!
-</p>
-<app-track></app-track>
+<div *ngIf="trackData?.collection.length">
+  <app-track *ngFor="let track of trackData?.collection" [myTrack]="track"></app-track>
+  <div *ngIf="trackData?.next_href" (click)="moreClick()">More</div>
+</div>
+ 
