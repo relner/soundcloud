@@ -2,15 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { DataService } from './services/data.service';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchContainerComponent } from './components/search-container/search-container.component';
+import { TrackListComponent } from './components/track-list/track-list.component';
+import { TrackComponent } from './components/track/track.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchContainerComponent,
+    TrackListComponent,
+    TrackComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
