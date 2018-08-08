@@ -19,7 +19,6 @@ export class AppComponent implements OnInit{
     this.dataService.getTracks(event).subscribe(data => {
       console.log(data);
       this.mytrackData = data;
-
     });
   }
   nextPage(){
