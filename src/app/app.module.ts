@@ -7,7 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SearchContainerComponent } from './components/search-container/search-container.component';
 import { TrackListComponent } from './components/track-list/track-list.component';
 import { TrackComponent } from './components/track/track.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { SoundCloudPipe } from './pipes/sound-cloud.pipe'
 
 
 
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms'
     AppComponent,
     SearchContainerComponent,
     TrackListComponent,
-    TrackComponent
+    TrackComponent,
+    SoundCloudPipe
   ],
   imports: [
     BrowserModule,
