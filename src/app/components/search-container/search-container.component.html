@@ -2,10 +2,10 @@
   <form (submit)="onSubmit($event)" #searchForm="ngForm">
   
     <mat-form-field class="search-input-field">
-      <input matInput placeholder="Search by" [(ngModel)]="searchResult" name="Search" required>
+      <input matInput placeholder="Search" [(ngModel)]="searchResult" name="Search" required>
     </mat-form-field>
 
-    <button class="search-button" mat-raised-button color="primary" [disabled]="!searchForm.form.valid">GO</button>
+    <button mat-raised-button color="primary" [disabled]="!searchForm.form.valid">GO</button>
 
   </form>
 </mat-card>

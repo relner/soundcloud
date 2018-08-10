@@ -1,6 +1,8 @@
-<p>
-  {{ myTrack.id }}
-</p>
-
-
+<mat-card>
 <iframe width="100%" height="166" scrolling="no" frameborder="no" [src]="urlTrack | soundCloud"></iframe> 
+
+<div *ngIf="myTrack.description">
+  <span>Track Description: </span>
+  <span class="track-description">{{ myTrack.description }}</span>
+</div>
+</mat-card>
