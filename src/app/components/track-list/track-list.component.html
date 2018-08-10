@@ -1,5 +1,6 @@
 <div *ngIf="trackData?.collection.length">
   <app-track *ngFor="let track of trackData?.collection" [myTrack]="track"></app-track>
-  <div *ngIf="trackData?.next_href" (click)="moreClick()">More</div>
+  <button class="more-button" *ngIf="trackData?.next_href" mat-raised-button (click)="moreClick()" color="primary">Load more tracks</button>
 </div>
+
  

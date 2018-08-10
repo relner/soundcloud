@@ -1,2 +1,5 @@
-<app-search-container (search)=searchTrack($event)></app-search-container>
-<app-track-list [trackData]="mytrackData" (more)="nextPage()"></app-track-list>
+<div class="my-app-header"></div>
+<div class="my-app-body">
+    <app-search-container (search)=searchTrack($event)></app-search-container>
+    <app-track-list [trackData]="mytrackData" (more)="nextPage()"></app-track-list>
+</div>

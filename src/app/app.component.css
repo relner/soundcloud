@@ -1,0 +1,8 @@
+.my-app-header{
+    height: 45px;
+    background: #333333;
+}
+.my-app-body{
+    max-width: 960px; 
+    margin: auto;
+}

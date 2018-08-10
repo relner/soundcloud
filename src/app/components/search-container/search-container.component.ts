@@ -13,7 +13,6 @@ export class SearchContainerComponent implements OnInit {
   @Output() search = new EventEmitter();
 
   constructor() { }
-  
   ngOnInit() {}
 
   onSubmit(event){
