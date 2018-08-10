@@ -21,9 +21,11 @@ export class AppComponent implements OnInit{
       this.mytrackData = data;
     });
   }
+  
   nextPage(){
     this.dataService.addNextPage(this.mytrackData.next_href).subscribe(data => {
-      this.mytrackData.collection = this.mytrackData.collection.concat(data.collection) ;
+      this.mytrackData.collection = this.mytrackData.collection.concat(data.collection);
+      if(data.next_href !== undefined){this.mytrackData.next_href = data.next_href}
     });
   }
 

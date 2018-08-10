@@ -10,6 +10,14 @@ import { TrackComponent } from './components/track/track.component';
 import { FormsModule } from '@angular/forms';
 import { SoundCloudPipe } from './pipes/sound-cloud.pipe'
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+
+
+
 
 
 @NgModule({
@@ -23,7 +31,12 @@ import { SoundCloudPipe } from './pipes/sound-cloud.pipe'
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
-<div *ngIf="trackData?.collection.length">
+<mat-card *ngIf="trackData?.collection.length">
   <app-track *ngFor="let track of trackData?.collection" [myTrack]="track"></app-track>
-  <div *ngIf="trackData?.next_href" (click)="moreClick()">More</div>
-</div>
+  <button class="search-button" *ngIf="trackData?.next_href" mat-raised-button (click)="moreClick()" color="primary">More</button>
+</mat-card>
+
  
