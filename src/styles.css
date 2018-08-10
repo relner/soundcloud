@@ -7,6 +7,3 @@ html, body{
     font-family: 'Sunflower', sans-serif;
     font-size: 14px;
 }
-iframe{
-    width: calc(100% - 48px);
-}
