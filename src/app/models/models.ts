@@ -1,5 +1,5 @@
 export interface TracksCollection {
-    collection: any[],
+    collection: Track[],
     next_href: any
 } 
 
